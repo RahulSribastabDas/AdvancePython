@@ -1,0 +1,27 @@
+numbers = (1, 2, 3, 4, 5)
+print("Tuple:", numbers)
+print("First element:", numbers[0])
+print("Last element:", numbers[-1])
+print("All elements:")
+for num in numbers:
+    print(num)
+print("Length of tuple:", len(numbers))
+single = (10,)
+print("Single element tuple:", single)
+new_tuple = numbers + (6, 7, 8)
+print("After Concatenation:", new_tuple)
+sliced_tuple = numbers[1:4]
+print("Sliced Tuple (index 1 to 4):", sliced_tuple)
+count_of_2 = new_tuple.count(2)
+print("Count of element 2 in new tuple:", count_of_2)
+index_of_4 = new_tuple.index(4)
+print("Index of element 4 in new tuple:", index_of_4)
+repeated_tuple = numbers * 2
+print("Repeated Tuple:", repeated_tuple)
+a, b, c, d, e = numbers
+print("Unpacked elements:", a, b, c, d, e)
+temp_list = list(numbers)
+temp_list.append(6)
+print("Converted to list and appended 6:", temp_list)
+modified_tuple = tuple(temp_list)
+print("Converted back to tuple:", modified_tuple)
